@@ -14,16 +14,17 @@ To get a local copy up and running follow these simple example steps.
   `git@github.com:mateo951/awesome-books.git`
 
 Authors
-👤 Alexander Morales
-GitHub: [@mateo951](https://github.com/alexandermorales-dev)
-Twitter: [@Alexand81099721]()
-LinkedIn: [@AlexanderMorales](https://www.linkedin.com/in/mateo-villagómez/)
-Email: [alexandermorales.n1@gmail.com](mailto:alexandermorales.n1@gmail.com)
 
-👤 Mateo Villagómez
-GitHub: [@mateo951](https://github.com/mateo951)
-Twitter: [@MVGameDev](https://twitter.com/MVGameDev)
-LinkedIn: [@Mateo Villagómez](https://www.linkedin.com/in/mateo-villagómez/)
+👤 Alexander Morales<br>
+GitHub: [@mateo951](https://github.com/alexandermorales-dev)<br>
+Twitter: [@Alexand81099721]()<br>
+LinkedIn: [@AlexanderMorales](https://www.linkedin.com/in/mateo-villagómez/)<br>
+Email: [alexandermorales.n1@gmail.com](mailto:alexandermorales.n1@gmail.com)<br>
+
+👤 Mateo Villagómez<br>
+GitHub: [@mateo951](https://github.com/mateo951)<br>
+Twitter: [@MVGameDev](https://twitter.com/MVGameDev)<br>
+LinkedIn: [@Mateo Villagómez](https://www.linkedin.com/in/mateo-villagómez/)<br>
 
 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
