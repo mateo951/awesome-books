@@ -1,16 +1,18 @@
 ## Awesome Books ##
 
-The project's goal is to apply JS objects concepts. "Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, I will learn how to manage data using JavaScript. 
+The project's goal is to apply JS objects concepts. "Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, I will learn how to manage data using JavaScript.
 
 Built With
+
 - HTML, CSS, JS
 - Linters, Node.js, Git, Flexbox
 
 [Portolio Live Demo](https://mateo951.github.io/awesome-books/)
 
 To get a local copy up and running follow these simple example steps.
+
 - On your terminal and run the following command to clone the repository
-  
+
   `git@github.com:mateo951/awesome-books.git`
 
 ### Authors ###

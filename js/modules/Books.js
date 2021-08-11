@@ -11,3 +11,4 @@ export default class Books {
     return this.booksData;
   }
 }
+
