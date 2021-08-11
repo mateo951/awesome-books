@@ -11,6 +11,8 @@ class Book {
 class Books {
   static ids = 0;
 
+  static booksData = [];
+
   constructor() {
     this.booksData = [];
   }
