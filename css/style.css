@@ -1,0 +1,63 @@
+* {
+  font-family: "Poppins", serif;
+}
+
+body {
+  background-image: url("/assets/bg-image.jpeg");
+  color: white;
+}
+
+h1,
+form {
+  text-align: center;
+}
+
+h1,
+h2 {
+  color: white;
+}
+
+section {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  width: 40%;
+}
+li {
+  border: 1px solid white;
+  list-style: none;
+  padding: 15px;
+}
+
+.dark-bg {
+  background-color: rgb(175, 175, 175);
+  color: white;
+}
+
+.white-bg {
+  background-color: white;
+  color: black;
+}
+
+button {
+  background-color: #397ce1; /* Green */
+  border: 2px solid white;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.removeButton {
+  float: right;
+}
+
+#submitBttn {
+  width: 100px;
+}
