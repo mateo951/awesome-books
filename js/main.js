@@ -1,31 +1,33 @@
 const booksDisplaySection = document.querySelector('#booksDisplay');
 const form = document.querySelector('#submitBttn');
 
-const Book = class {
+class Book {
   constructor(title, author) {
     this.title = title;
     this.author = author;
   }
 };
 
-const Books = class {
+class Books {
   static ids = 0;
 
   constructor() {
     this.booksData = [];
   }
 
-  initializeBooks(data) {
+  static initializeBooks(data) {
     this.booksData = data;
+  }
+
+  static getBooks() {
+    return this.booksData;
   }
 };
 
-const books = new Books();
-
-const Methods = class {
+class Methods {
   static createBook(bookData) {
     const newBook = new Book(bookData.title, bookData.author);
-    books.booksData.push(newBook);
+    Books.getBooks().push(newBook);
     this.insertBookStructure(newBook, false);
   }
 
@@ -34,7 +36,7 @@ const Methods = class {
       .getElementById(div.id)
       .querySelector('.removeButton');
     removeBttn.addEventListener('click', () => {
-      books.booksData.splice(div.id, 1); // eslint-disable-next-line no-use-before-define
+      Books.getBooks().splice(div.id, 1); // eslint-disable-next-line no-use-before-define
       CheckInput();
       div.remove();
     });
@@ -46,7 +48,7 @@ const Methods = class {
       + `<p>${book.author}</p>`
       + "<button class = 'removeButton'>Remove</button><br>";
     if (!initialDisplay) {
-      divSection.id = `${books.booksData.length - 1}`;
+      divSection.id = `${Books.getBooks().length - 1}`;
     } else {
       divSection.id = `${Books.ids}`;
       Books.ids += 1;
@@ -68,7 +70,7 @@ function localStorageAv() {
 }
 
 function HandleInputData() {
-  const jsonData = JSON.stringify(books.booksData);
+  const jsonData = JSON.stringify(Books.getBooks());
   localStorage.setItem('data', jsonData);
 }
 
@@ -102,7 +104,7 @@ form.addEventListener('click', (event) => {
 function CheckLocalInput() {
   const data = JSON.parse(localStorage.getItem('data'));
   if (data !== null) {
-    books.initializeBooks(data);
+    Books.initializeBooks(data);
     for (let i = 0; i < data.length; i += 1) {
       if (hasValue(data[i])) {
         Methods.insertBookStructure(data[i], true);
