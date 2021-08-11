@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url("/assets/bg-image.jpeg");
+  background-image: url("../assets/bg-image.jpeg");
   color: white;
 }
 
@@ -24,7 +24,9 @@ section {
 }
 
 ul {
-  width: 40%;
+  padding: 0;
+  min-width: 300px;
+  width: 60%;
 }
 
 li {
@@ -61,4 +63,10 @@ button {
 
 #submitBttn {
   width: 100px;
+  margin-top: 10px;
+}
+
+input {
+  width: 300px;
+  text-align: center;
 }
