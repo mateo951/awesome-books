@@ -6,7 +6,7 @@ class Book {
     this.title = title;
     this.author = author;
   }
-};
+}
 
 class Books {
   static ids = 0;
@@ -22,7 +22,7 @@ class Books {
   static getBooks() {
     return this.booksData;
   }
-};
+}
 
 class Methods {
   static createBook(bookData) {
@@ -56,7 +56,7 @@ class Methods {
     booksDisplaySection.appendChild(divSection);
     this.removeBook(divSection);
   }
-};
+}
 
 function localStorageAv() {
   const test = 'test';
