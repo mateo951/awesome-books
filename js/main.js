@@ -1,5 +1,5 @@
-const booksDisplaySection = document.querySelector("#booksDisplay");
-const form = document.querySelector("#submitBttn");
+const booksDisplaySection = document.querySelector('#booksDisplay');
+const form = document.querySelector('#submitBttn');
 
 class Book {
   constructor(title, author) {
@@ -10,6 +10,7 @@ class Book {
 
 class Books {
   static ids = 0;
+
   static booksData = [];
 
   constructor() {
@@ -36,8 +37,8 @@ class Methods {
   static removeBook(div) {
     const removeBttn = document
       .getElementById(div.id)
-      .querySelector(".removeButton");
-    removeBttn.addEventListener("click", () => {
+      .querySelector('.removeButton');
+    removeBttn.addEventListener('click', () => {
       Books.getBooks().splice(div.id, 1); // eslint-disable-next-line no-use-before-define
       CheckInput();
       div.remove();
@@ -45,31 +46,30 @@ class Methods {
   }
 
   static insertBookStructure(book, initialDisplay) {
-    const listItem = document.createElement("li");
+    const listItem = document.createElement('li');
     if (Books.ids % 2 === 0) {
-      listItem.classList.add("dark-bg");
+      listItem.classList.add('dark-bg');
     } else {
-      listItem.classList.add("white-bg");
+      listItem.classList.add('white-bg');
     }
-    listItem.innerHTML =
-      ` ${book.title}` +
-      " by " +
-      `${book.author}` +
-      " " +
-      "<button class = 'removeButton'>Remove</button><br>";
+    listItem.innerHTML = ` ${book.title}`
+      + ' by '
+      + `${book.author}`
+      + ' '
+      + "<button class = 'removeButton'>Remove</button><br>";
     if (!initialDisplay) {
       listItem.id = `${Books.getBooks().length - 1}`;
     } else {
       listItem.id = `${Books.ids}`;
       Books.ids += 1;
     }
-    document.querySelector("#booksDisplay ul").appendChild(listItem);
+    document.querySelector('#booksDisplay ul').appendChild(listItem);
     this.removeBook(listItem);
   }
 }
 
 function localStorageAv() {
-  const test = "test";
+  const test = 'test';
   try {
     localStorage.setItem(test, test);
     localStorage.removeItem(test);
@@ -81,7 +81,7 @@ function localStorageAv() {
 
 function HandleInputData() {
   const jsonData = JSON.stringify(Books.getBooks());
-  localStorage.setItem("data", jsonData);
+  localStorage.setItem('data', jsonData);
 }
 
 const storageAvailability = localStorageAv();
@@ -93,13 +93,13 @@ const CheckInput = () => {
 };
 
 function hasValue(input) {
-  if (input === "") {
+  if (input === '') {
     return false;
   }
   return true;
 }
 
-form.addEventListener("click", (event) => {
+form.addEventListener('click', (event) => {
   const inputs = document.querySelectorAll("#bookForm input[type='text']");
   const titleValue = inputs[0].value;
   const authorValue = inputs[1].value;
@@ -112,7 +112,7 @@ form.addEventListener("click", (event) => {
 });
 
 function CheckLocalInput() {
-  const data = JSON.parse(localStorage.getItem("data"));
+  const data = JSON.parse(localStorage.getItem('data'));
   if (data !== null) {
     Books.initializeBooks(data);
     for (let i = 0; i < data.length; i += 1) {
