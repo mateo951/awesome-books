@@ -100,3 +100,16 @@ nav {
 .hideSection {
   display: none;
 }
+
+#contact h2 {
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
