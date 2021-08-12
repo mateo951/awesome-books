@@ -35,16 +35,6 @@ li {
   padding: 15px;
 }
 
-.dark-bg {
-  background-color: rgb(175, 175, 175);
-  color: white;
-}
-
-.white-bg {
-  background-color: white;
-  color: black;
-}
-
 button {
   background-color: #397ce1; /* Green */
   border: 2px solid white;
@@ -69,4 +59,14 @@ button {
 input {
   width: 300px;
   text-align: center;
+}
+
+ul li:nth-child(odd) {
+  background-color: rgb(175, 175, 175);
+  color: white;
+}
+
+ul li:nth-child(even) {
+  background-color: white;
+  color: black;
 }

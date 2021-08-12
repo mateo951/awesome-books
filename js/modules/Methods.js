@@ -29,11 +29,6 @@ export default class Methods {
 
   static insertBookStructure(book, initialDisplay) {
     const listItem = document.createElement('li');
-    if (Books.ids % 2 === 0) {
-      listItem.classList.add('dark-bg');
-    } else {
-      listItem.classList.add('white-bg');
-    }
     listItem.innerHTML = ` ${book.title}`
       + ' by '
       + `${book.author}`
