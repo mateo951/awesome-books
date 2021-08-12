@@ -19,16 +19,12 @@ h2 {
   color: white;
 }
 
-section {
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-}
-
 #booksDisplay ul {
+  position: relative;
   padding: 0;
   min-width: 300px;
   width: 60%;
+  left: 20%;
 }
 
 #booksDisplay li {
@@ -38,7 +34,7 @@ section {
 }
 
 button {
-  background-color: #397ce1; /* Green */
+  background-color: #397ce1;
   border: 2px solid white;
   color: white;
   padding: 5px;
@@ -82,7 +78,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   list-style: none;
-  background-color: white;
+  background-color: rgb(208, 204, 204);
   padding: 0;
   margin: 0;
 }
@@ -101,8 +97,21 @@ nav {
   display: none;
 }
 
-#contact h2 {
+h2 {
   text-align: center;
+}
+
+#contact {
+  position: relative;
+  text-align: center;
+}
+
+#contact ul {
+  position: relative;
+  left: 40%;
+  width: 40%;
+  text-align: left;
+  margin-top: 20px;
 }
 
 footer {
