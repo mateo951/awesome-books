@@ -19,10 +19,9 @@ form.addEventListener('click', (event) => {
     const book = new Book(titleValue, authorValue);
     Methods.createBook(book);
     Methods.CheckInput();
-    inputs[0].value = "";
-    inputs[1].value = "";
+    inputs[0].value = '';
+    inputs[1].value = '';
     event.preventDefault();
-
   }
 });
 
