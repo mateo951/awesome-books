@@ -4,6 +4,18 @@ import Methods from './modules/Methods.js';
 
 const form = document.querySelector('#submitBttn');
 
+function displaySection(section) {
+  let sections = document.querySelectorAll(".sections");
+
+  if (section.classList.contains('hideSection')) {
+    for(let i = 0; i < sections.length; i += 1){
+      sections[i].classList.add("hideSection");
+    }
+    section.classList.toggle("hideSection");
+  }
+}
+window.displaySection = displaySection;
+
 function hasValue(input) {
   if (input === '') {
     return false;

@@ -1,5 +1,7 @@
 * {
   font-family: "Poppins", serif;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -23,13 +25,13 @@ section {
   justify-content: center;
 }
 
-ul {
+#booksDisplay ul {
   padding: 0;
   min-width: 300px;
   width: 60%;
 }
 
-li {
+#booksDisplay li {
   border: 1px solid white;
   list-style: none;
   padding: 15px;
@@ -61,12 +63,40 @@ input {
   text-align: center;
 }
 
-ul li:nth-child(odd) {
+#booksDisplay ul li:nth-child(odd) {
   background-color: rgb(175, 175, 175);
   color: white;
 }
 
-ul li:nth-child(even) {
+#booksDisplay ul li:nth-child(even) {
   background-color: white;
   color: black;
+}
+
+nav {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  padding: 10px 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.hideSection {
+  display: none;
 }
