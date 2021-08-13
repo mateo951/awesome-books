@@ -17,10 +17,16 @@ form {
 h2 {
   color: white;
   font-size: 30px;
+  text-align: center;
+  margin: 60px 0;
 }
 
 ul {
   list-style: none;
+}
+
+.navbar li {
+  padding: 10px 20px;
 }
 
 #booksDisplay ul {
@@ -87,10 +93,6 @@ nav {
   margin: 0;
 }
 
-.navbar li {
-  padding: 10px 20px;
-}
-
 .navbar a {
   text-decoration: none;
   color: black;
@@ -99,11 +101,6 @@ nav {
 
 .hideSection {
   display: none;
-}
-
-h2 {
-  text-align: center;
-  margin: 60px 0;
 }
 
 #contact {
@@ -136,7 +133,7 @@ footer {
   text-align: center;
 }
 
-time {
+#time {
   float: right;
   padding: 10px;
 }
