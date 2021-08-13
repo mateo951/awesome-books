@@ -15,6 +15,8 @@ To get a local copy up and running follow these simple example steps.
 
   `git@github.com:mateo951/awesome-books.git`
 
+#### To test the app use Live Server (Extension for VS Code) to avoid js module CORS policy ####
+
 ### Authors ###
 
 👤 Alexander Morales<br>

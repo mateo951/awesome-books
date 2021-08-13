@@ -28,19 +28,20 @@ export default class Methods {
   }
 
   static insertBookStructure(book, initialDisplay) {
-    const booksDisplaySection = document.querySelector('#booksDisplay');
-    const divSection = document.createElement('div');
-    divSection.innerHTML = `<p>${book.title}</p>`
-      + `<p>${book.author}</p>`
+    const listItem = document.createElement('li');
+    listItem.innerHTML = ` ${book.title}`
+      + ' by '
+      + `${book.author}`
+      + ' '
       + "<button class = 'removeButton'>Remove</button><br>";
     if (!initialDisplay) {
-      divSection.id = `${Books.getBooks().length - 1}`;
+      listItem.id = `${Books.getBooks().length - 1}`;
     } else {
-      divSection.id = `${Books.ids}`;
+      listItem.id = `${Books.ids}`;
       Books.ids += 1;
     }
-    booksDisplaySection.appendChild(divSection);
-    this.removeBook(divSection);
+    document.querySelector('#booksDisplay ul').appendChild(listItem);
+    this.removeBook(listItem);
   }
 
   static localStorageAv() {
