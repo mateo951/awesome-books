@@ -8,24 +8,58 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@1.27.0/build/global/luxon.min.js" defer></script>
   </head>
 
   <body>
-    <h1>Awesome Books</h1>
-    <section id="booksDisplay"><ul></ul></section>
-    <form action="#" id="bookForm">
-      <br>
+    <nav>
+      <ul class="navbar">
+        <li>
+          <a onclick="displaySection(document.getElementById('booksDisplay'))"
+            >List</a
+          >
+        </li>
+        <li>
+          <a onclick="displaySection(document.getElementById('addBook'))"
+            >Add New</a
+          >
+        </li>
+        <li>
+          <a onclick="displaySection(document.getElementById('contact'))"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <p id="time">time</p>
+    <section id="booksDisplay" class="hideSection sections">
+      <h2>All awesome books</h2>
+      <ul></ul>
+    </section>
+    <section id="addBook" class="sections">
       <h2>Add a new Book</h2>
-      <input type="text" placeholder="Book title" required maxlength="30">
-      <br>
-      <input type="text" placeholder="Author" required maxlength="20"> 
-      <br>
-      <button type="submit" id="submitBttn">Add</button>
-    </form>
+      <form action="#" id="bookForm">
+        <br />
+        <input type="text" placeholder="Book title" required maxlength="30" />
+        <br />
+        <input type="text" placeholder="Author" required maxlength="20" />
+        <br />
+        <button type="submit" id="submitBttn">Add</button>
+      </form>
+    </section>
+    <section id="contact" class="hideSection sections">
+      <h2>Contact</h2>
+      <p>Do you have any questions or just want to say "Hello"?</p>
+      <p>You can reach out to us!</p>
+
+      <ul>
+        <li>Our e-mail alexmateo@gmail.com</li>
+        <li>Our number: 012940930</li>
+        <li>Our address Theoretical Street 00,203480 Test City</li>
+      </ul>
+    </section>
+    <footer>Copyright 2021 Theoretical Company &copy;</footer>
     <script src="./js/main.js" type="module"></script>
   </body>
 </html>
